@@ -1,0 +1,94 @@
+.LoginBody {
+    width: 70%;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    // background-color: black;
+    // background-image: url(../Images/background.jpg);
+    border: 1px solid black;
+    h2 {
+        text-align: center;
+        color: #34373f;
+    }
+    .Login {
+        display: flex;
+        .lottiediv {
+            width: 50%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            lottie-player {
+                width: 300px !important;
+                height: 300px !important;
+            }
+        }
+        .loginInput {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+            h3 {
+                color: #88cbda;
+            }
+            .loginField {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 90%;
+
+                .input {
+                    margin-bottom: 10px;
+                    border: black !important;
+                    width: 95%;
+                }
+                p {
+                    margin: 0px;
+                    font-size: 11px;
+                    span {
+                        font-weight: bold;
+                        cursor: pointer;
+                        font-size: 12px;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+            .signupField {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                .input {
+                    margin-bottom: 10px;
+                    width: 95%;
+                }
+                .name {
+                    width: 45%;
+                }
+            }
+        }
+        .btndiv{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            p {
+                margin: 0px;
+                font-size: 11px;
+                span {
+                    font-weight: bold;
+                    cursor: pointer;
+                    font-size: 12px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
